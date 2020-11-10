@@ -98,8 +98,8 @@ const movies = [
 //create those movies
 
 Movie.create(movies)
-  .then(allmoviesDB => {
-    console.log(`Created ${allmoviesDB.length} movies`);
+  .then(allMoviesFromDB => {
+    console.log(`Created ${allMoviesFromDB.length} movies`);
     // Once created, close the DB connection
     mongoose.connection.close();
   })
